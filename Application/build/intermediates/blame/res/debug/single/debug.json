@@ -40,12 +40,12 @@
         "source": "/Users/allen/.gradle/caches/transforms-2/files-2.1/7842e943218445d9c3f03f6bb7b979d5/res/drawable-xxxhdpi-v4/abc_ic_star_black_48dp.png"
     },
     {
-        "merged": "/Users/allen/Projects/UMDCamera2/Application/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
-        "source": "/Users/allen/.gradle/caches/transforms-2/files-2.1/7842e943218445d9c3f03f6bb7b979d5/res/drawable-xxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
-    },
-    {
         "merged": "/Users/allen/Projects/UMDCamera2/Application/build/intermediates/res/merged/debug/layout_abc_select_dialog_material.xml.flat",
         "source": "/Users/allen/.gradle/caches/transforms-2/files-2.1/7842e943218445d9c3f03f6bb7b979d5/res/layout/abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/allen/Projects/UMDCamera2/Application/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
+        "source": "/Users/allen/.gradle/caches/transforms-2/files-2.1/7842e943218445d9c3f03f6bb7b979d5/res/drawable-xxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
     },
     {
         "merged": "/Users/allen/Projects/UMDCamera2/Application/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
@@ -156,12 +156,12 @@
         "source": "/Users/allen/.gradle/caches/transforms-2/files-2.1/7842e943218445d9c3f03f6bb7b979d5/res/drawable-xhdpi-v4/abc_ic_star_half_black_36dp.png"
     },
     {
-        "merged": "/Users/allen/Projects/UMDCamera2/Application/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
-        "source": "/Users/allen/.gradle/caches/transforms-2/files-2.1/3d8f82f6cae9f579ad0c7fc7ac5866bf/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
-    },
-    {
         "merged": "/Users/allen/Projects/UMDCamera2/Application/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
         "source": "/Users/allen/.gradle/caches/transforms-2/files-2.1/7842e943218445d9c3f03f6bb7b979d5/res/drawable-mdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/allen/Projects/UMDCamera2/Application/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "/Users/allen/.gradle/caches/transforms-2/files-2.1/3d8f82f6cae9f579ad0c7fc7ac5866bf/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
     },
     {
         "merged": "/Users/allen/Projects/UMDCamera2/Application/build/intermediates/res/merged/debug/drawable-xhdpi_ic_action_info.png.flat",
@@ -320,12 +320,12 @@
         "source": "/Users/allen/.gradle/caches/transforms-2/files-2.1/7842e943218445d9c3f03f6bb7b979d5/res/drawable-mdpi-v4/abc_list_pressed_holo_light.9.png"
     },
     {
-        "merged": "/Users/allen/Projects/UMDCamera2/Application/build/intermediates/res/merged/debug/drawable-ldrtl-hdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
-        "source": "/Users/allen/.gradle/caches/transforms-2/files-2.1/7842e943218445d9c3f03f6bb7b979d5/res/drawable-ldrtl-hdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
-    },
-    {
         "merged": "/Users/allen/Projects/UMDCamera2/Application/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
         "source": "/Users/allen/.gradle/caches/transforms-2/files-2.1/7842e943218445d9c3f03f6bb7b979d5/res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/allen/Projects/UMDCamera2/Application/build/intermediates/res/merged/debug/drawable-ldrtl-hdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "/Users/allen/.gradle/caches/transforms-2/files-2.1/7842e943218445d9c3f03f6bb7b979d5/res/drawable-ldrtl-hdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "/Users/allen/Projects/UMDCamera2/Application/build/intermediates/res/merged/debug/layout_abc_screen_content_include.xml.flat",
@@ -664,12 +664,12 @@
         "source": "/Users/allen/.gradle/caches/transforms-2/files-2.1/7842e943218445d9c3f03f6bb7b979d5/res/drawable-xxhdpi-v4/abc_ic_star_half_black_36dp.png"
     },
     {
-        "merged": "/Users/allen/Projects/UMDCamera2/Application/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_black_16dp.png.flat",
-        "source": "/Users/allen/.gradle/caches/transforms-2/files-2.1/7842e943218445d9c3f03f6bb7b979d5/res/drawable-mdpi-v4/abc_ic_star_black_16dp.png"
-    },
-    {
         "merged": "/Users/allen/Projects/UMDCamera2/Application/build/intermediates/res/merged/debug/anim_abc_slide_in_bottom.xml.flat",
         "source": "/Users/allen/.gradle/caches/transforms-2/files-2.1/7842e943218445d9c3f03f6bb7b979d5/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/allen/Projects/UMDCamera2/Application/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_black_16dp.png.flat",
+        "source": "/Users/allen/.gradle/caches/transforms-2/files-2.1/7842e943218445d9c3f03f6bb7b979d5/res/drawable-mdpi-v4/abc_ic_star_black_16dp.png"
     },
     {
         "merged": "/Users/allen/Projects/UMDCamera2/Application/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
