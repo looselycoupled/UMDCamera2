@@ -1,4 +1,0 @@
-#Sat Jul 27 17:01:19 EDT 2019
-base.0=/Users/allen/Projects/UMDCamera2/Application/build/intermediates/transforms/dexMerger/debug/4
-path.0=classes.dex
-renamed.0=classes.dex

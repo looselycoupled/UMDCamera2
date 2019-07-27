@@ -1,4 +1,0 @@
-#Tue Jul 23 21:16:41 EDT 2019
-base.0=/Users/allen/Projects/Camera2Raw/Application/build/intermediates/transforms/dexMerger/debug/6
-path.0=classes.dex
-renamed.0=classes.dex
