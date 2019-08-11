@@ -149,7 +149,6 @@ public class Camera2RawFragment extends Fragment
     };
 
     /**
-     * Timeout for the pre-capture sequence.
      */
     private static final long PRECAPTURE_TIMEOUT_MS = 1000;
 
