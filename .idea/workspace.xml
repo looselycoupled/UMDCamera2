@@ -20,7 +20,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application/src/main/java/com/example/android/camera2raw/Camera2RawFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/Application/src/main/java/com/example/android/camera2raw/Camera2RawFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application/src/main/res/layout/fragment_camera2_basic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Application/src/main/res/layout/fragment_camera2_basic.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Application/src/main/res/values/dimens.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,11 +39,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/camera2raw/Camera2RawFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="612" column="31" selection-start-line="612" selection-start-column="31" selection-end-line="612" selection-end-column="31" />
+            <state relative-caret-position="293">
+              <caret line="736" column="31" lean-forward="true" selection-start-line="736" selection-start-column="31" selection-end-line="736" selection-end-column="31" />
               <folding>
                 <element signature="e#0#72949#0" />
-                <element signature="imports" />
                 <element signature="docComment;class#Camera2RawFragment#0" />
                 <element signature="e#4628#4699#0" />
                 <element signature="initializer##0;class#Camera2RawFragment#0" />
@@ -158,9 +156,6 @@
                 <element signature="e#24576#24754#1" />
                 <element signature="e#24643#24740#1" />
                 <element signature="e#24770#24867#1" />
-                <element signature="e#24879#25074#0" />
-                <element signature="e#24956#25068#0" />
-                <element signature="e#24989#25058#1" />
                 <element signature="e#25080#25184#0" />
                 <element signature="e#25080#28636#0" />
                 <element signature="e#25399#25580#1" />
@@ -228,7 +223,6 @@
                 <element signature="method#onConfigureFailed#0;class#35037:36680" />
                 <element signature="e#36758#36802#0" />
                 <element signature="e#36814#37096#0" />
-                <element signature="e#36814#39298#0" />
                 <element signature="e#37633#38230#1" />
                 <element signature="e#37926#38077#1" />
                 <element signature="e#38083#38220#1" />
@@ -254,16 +248,12 @@
                 <element signature="e#45356#45431#1" />
                 <element signature="e#45467#45857#0" />
                 <element signature="e#45467#47619#0" />
-                <element signature="e#45931#47613#0" />
                 <element signature="e#45982#46066#0" />
-                <element signature="e#46152#46191#1" />
-                <element signature="e#46209#47518#0" />
                 <element signature="e#46227#46311#0" />
                 <element signature="e#46386#46557#1" />
                 <element signature="e#46575#46655#0" />
                 <element signature="e#46719#46966#1" />
                 <element signature="e#46984#47050#0" />
-                <element signature="e#47551#47603#0" />
                 <element signature="e#47625#47826#0" />
                 <element signature="e#47625#49760#0" />
                 <element signature="e#47886#49677#0" />
@@ -399,6 +389,26 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/fragment_camera2_basic.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1562">
+              <caret line="114" column="32" selection-start-line="114" selection-start-column="32" selection-end-line="114" selection-end-column="32" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/src/main/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/src/main/res/values/base-strings.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -418,9 +428,19 @@
       <find>PRECAPTURE_TIMEOUT_MS</find>
       <find>process</find>
       <find>picture</find>
-      <find>setOnClickListener</find>
       <find>onCreate</find>
+      <find>mCaptureSession</find>
+      <find>iii</find>
+      <find>setOnClickListener</find>
+      <find>support</find>
+      <find>FragmentCompat</find>
+      <find>ActivityCompat</find>
+      <find>SystemClock</find>
+      <find>timer</find>
     </findStrings>
+    <replaceStrings>
+      <replace>iterations</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -606,7 +626,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.33821735" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.33821735" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -621,7 +641,7 @@
       <window_info anchor="bottom" id="Terminal" order="4" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50061053" side_tool="true" weight="0.3368984" />
       <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4993895" visible="true" weight="0.3368984" />
+      <window_info active="true" anchor="bottom" id="Build" order="7" sideWeight="0.4993895" visible="true" weight="0.3368984" />
       <window_info anchor="bottom" id="Find" order="8" visible="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Android Profiler" order="9" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
@@ -699,20 +719,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/fragment_camera2_basic.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/res/values/base-strings.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/res/values-v21/base-colors.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -726,13 +732,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/res/values/base-strings.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/fragment_camera2_basic.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1562">
+          <caret line="114" column="32" selection-start-line="114" selection-start-column="32" selection-end-line="114" selection-end-column="32" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/os/CountDownTimer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="50" column="7" lean-forward="true" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/camera2raw/Camera2RawFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="612" column="31" selection-start-line="612" selection-start-column="31" selection-end-line="612" selection-end-column="31" />
+        <state relative-caret-position="293">
+          <caret line="736" column="31" lean-forward="true" selection-start-line="736" selection-start-column="31" selection-end-line="736" selection-end-column="31" />
           <folding>
             <element signature="e#0#72949#0" />
-            <element signature="imports" />
             <element signature="docComment;class#Camera2RawFragment#0" />
             <element signature="e#4628#4699#0" />
             <element signature="initializer##0;class#Camera2RawFragment#0" />
@@ -846,9 +872,6 @@
             <element signature="e#24576#24754#1" />
             <element signature="e#24643#24740#1" />
             <element signature="e#24770#24867#1" />
-            <element signature="e#24879#25074#0" />
-            <element signature="e#24956#25068#0" />
-            <element signature="e#24989#25058#1" />
             <element signature="e#25080#25184#0" />
             <element signature="e#25080#28636#0" />
             <element signature="e#25399#25580#1" />
@@ -916,7 +939,6 @@
             <element signature="method#onConfigureFailed#0;class#35037:36680" />
             <element signature="e#36758#36802#0" />
             <element signature="e#36814#37096#0" />
-            <element signature="e#36814#39298#0" />
             <element signature="e#37633#38230#1" />
             <element signature="e#37926#38077#1" />
             <element signature="e#38083#38220#1" />
@@ -942,16 +964,12 @@
             <element signature="e#45356#45431#1" />
             <element signature="e#45467#45857#0" />
             <element signature="e#45467#47619#0" />
-            <element signature="e#45931#47613#0" />
             <element signature="e#45982#46066#0" />
-            <element signature="e#46152#46191#1" />
-            <element signature="e#46209#47518#0" />
             <element signature="e#46227#46311#0" />
             <element signature="e#46386#46557#1" />
             <element signature="e#46575#46655#0" />
             <element signature="e#46719#46966#1" />
             <element signature="e#46984#47050#0" />
-            <element signature="e#47551#47603#0" />
             <element signature="e#47625#47826#0" />
             <element signature="e#47625#49760#0" />
             <element signature="e#47886#49677#0" />
