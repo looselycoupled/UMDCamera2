@@ -66,6 +66,8 @@ import android.view.Surface;
 import android.view.TextureView;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.SeekBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.File;
@@ -606,10 +608,39 @@ public class Camera2RawFragment extends Fragment
         return inflater.inflate(R.layout.fragment_camera2_basic, container, false);
     }
 
+
+    /*
+    * Autocapture view controls
+    * */
+    private SeekBar delayBar;
+    private TextView delayLabel;
+
     @Override
     public void onViewCreated(final View view, Bundle savedInstanceState) {
         view.findViewById(R.id.picture).setOnClickListener(this);
         mTextureView = (AutoFitTextureView) view.findViewById(R.id.texture);
+        
+        delayBar = view.findViewById(R.id.delayBar);
+        delayLabel = view.findViewById(R.id.delayView);
+
+        if (delayBar != null) {
+            delayBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+                @Override
+                public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                    delayLabel.setText("Minutes: " + Integer.toString(progress));
+                }
+                @Override
+                public void onStartTrackingTouch(SeekBar seekBar) {
+                    // Write code to perform some action when touch is stopped.
+                }
+                @Override
+                public void onStopTrackingTouch(SeekBar seekBar) {
+                    // Write code to perform some action when touch is stopped.
+                }
+
+
+            });
+        }
 
         // Setup a new OrientationEventListener.  This is used to handle rotation events like a
         // 180 degree rotation that do not normally trigger a call to onCreate to do view re-layout
