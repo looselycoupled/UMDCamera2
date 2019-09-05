@@ -19,6 +19,7 @@ package com.example.android.camera2raw;
 import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.os.CountDownTimer;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.app.Fragment;
@@ -61,12 +62,16 @@ import android.util.Log;
 import android.util.Size;
 import android.util.SparseIntArray;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.OrientationEventListener;
 import android.view.Surface;
 import android.view.TextureView;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.SeekBar;
+import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.Button;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -606,10 +611,49 @@ public class Camera2RawFragment extends Fragment
         return inflater.inflate(R.layout.fragment_camera2_basic, container, false);
     }
 
+
+    /*
+    * Autocapture view controls
+    * */
+    private SeekBar delayBar;
+    private TextView delayLabel;
+    private TextView cancelButton;
+    private TextView countdownView;
+    private Integer delay = 1;
+
     @Override
     public void onViewCreated(final View view, Bundle savedInstanceState) {
         view.findViewById(R.id.picture).setOnClickListener(this);
         mTextureView = (AutoFitTextureView) view.findViewById(R.id.texture);
+
+        cancelButton = view.findViewById(R.id.cancelButton);
+        cancelButton.setOnClickListener(this);
+        cancelButton.setVisibility(View.GONE);
+
+        delayBar = view.findViewById(R.id.delayBar);
+        delayLabel = view.findViewById(R.id.delayView);
+        countdownView = view.findViewById(R.id.countdownView);
+
+
+        if (delayBar != null) {
+            delayBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+                @Override
+                public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                    delay = progress;
+                    delayLabel.setText("Minutes: " + Integer.toString(delay));
+                }
+                @Override
+                public void onStartTrackingTouch(SeekBar seekBar) {
+                    // Write code to perform some action when touch is stopped.
+                }
+                @Override
+                public void onStopTrackingTouch(SeekBar seekBar) {
+                    // Write code to perform some action when touch is stopped.
+                }
+
+
+            });
+        }
 
         // Setup a new OrientationEventListener.  This is used to handle rotation events like a
         // 180 degree rotation that do not normally trigger a call to onCreate to do view re-layout
@@ -669,12 +713,56 @@ public class Camera2RawFragment extends Fragment
         }
     }
 
+
+    // private int iterations;
+    private CountDownTimer autocaptureTimer;
+
+    public void autoCapture(long setupDelaySeconds) {
+
+        long delayInterval = 1000 * delay * 60;
+
+        if (setupDelaySeconds > 0) {
+            delayInterval = setupDelaySeconds * 1000;
+        }
+
+        autocaptureTimer = new CountDownTimer(delayInterval, 1000){
+            public void onTick(long millisUntilFinished){
+                long seconds = TimeUnit.MILLISECONDS.toSeconds(millisUntilFinished);
+                countdownView.setText(String.valueOf(seconds));
+            }
+            public  void onFinish(){
+                countdownView.setText("0");
+                Log.i(TAG, "autocapture initiated");
+                takePicture();
+                autoCapture(0);
+            }
+        };
+        autocaptureTimer.start();
+    }
+
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.picture: {
-                takePicture();
+                if (delay == 0) {
+                    takePicture();
+                    break;
+                } else {
+                    cancelButton.setVisibility(View.VISIBLE);
+                    Log.i(TAG, "autocapture requested");
+                    autoCapture(10);
+                    break;
+                }
+            }
+            case R.id.cancelButton: {
+                Log.i(TAG, "autocapture cancel requested");
+                countdownView.setText("");
+                autocaptureTimer.cancel();
+                cancelButton.setVisibility(View.GONE);
                 break;
+            }
+            default: {
+                Log.i(TAG, "unknown Click event");
             }
         }
     }
